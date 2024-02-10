@@ -1,0 +1,102 @@
+.modal-background {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(47, 47, 47, 0.75);
+}
+
+.modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.name {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+label {
+    text-wrap: nowrap;
+}
+
+.name input {
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #CCCCCC;
+}
+
+.color-selector {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.colors {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.color {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+
+}
+
+.color:active {
+    border: 2px solid black;
+}
+
+#color1 {
+    background-color: #b38bfa;
+}
+
+#color2 {
+    background-color: #FF79F2;
+}
+
+#color3 {
+    background-color: #43E6FC;
+}
+
+#color4 {
+    background-color: #F19576;
+}
+
+#color5 {
+    background-color: #0047FF;
+}
+
+#color6 {
+    background-color: #6691FF;
+}
+
+.error {
+    color: red;
+    display: none;
+}
+
+.modal button {
+    font-weight: bold;
+    width: max-content;
+    padding: 5px 30px;
+    border-radius: 10px;
+    background-color: var(--bgBlue);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    align-self: flex-end;
+}

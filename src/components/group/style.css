@@ -1,0 +1,27 @@
+.group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #2f2f2f2b;
+}
+
+.group-icon {
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.group-name {
+    font-weight: bold;
+}

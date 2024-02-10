@@ -1,0 +1,23 @@
+.groupContainer {
+    position: relative;
+    height: 80vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.add {
+    position: sticky;
+    left: 80%;
+    bottom: 10%;
+    background-color: var(--blue);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+}

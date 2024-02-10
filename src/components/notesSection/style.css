@@ -1,0 +1,83 @@
+.notes-section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 75%;
+    height: 100vh;
+    background: var(--notes-bg);
+}
+
+.notes-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--bgBlue);
+    color: var(--white);
+    padding: 10px;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--blue);
+}
+
+.notes-body {
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.note-body {
+    background-color: var(--white);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.note-time {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    color: #353535;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.dot {
+    background-color: black;
+    border-radius: 50%;
+    height: 5px;
+    width: 5px;
+}
+
+.notes-input {
+    background-color: var(--bgBlue);
+    border-bottom-left-radius: 10px;
+    position: relative;
+}
+
+.notes-input textarea {
+    width: calc(100% - 40px);
+    height: 200px;
+    border-radius: 10px;
+    resize: none;
+    margin: 20px;
+    padding: 20px;
+    outline: none;
+    font-size: 16px;
+}
+
+.send {
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    font-size: 24px;
+    color: gray;
+    cursor: pointer;
+}
