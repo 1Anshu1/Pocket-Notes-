@@ -1,6 +1,7 @@
 import './App.css'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+
 
 import GroupsArea from './components/groupsArea/GroupsArea'
 import Notes from './components/notes/Notes'
@@ -10,12 +11,13 @@ import { Context } from './Context'
 const App = () => {
   const [show, setShow] = useState(false)
   const [currentGroup, setCurrentGroup] = useState()
+  const [hideNotes, setHideNotes] = useState(false)
 
   return (
     <div className='main'>
-      <Context.Provider value={{ setShow, currentGroup, setCurrentGroup }}>
+      <Context.Provider value={{ setShow, currentGroup, setCurrentGroup, setHideNotes }}>
         <GroupsArea />
-        <Notes />
+        {!hideNotes && <Notes />}
         {show && <Modal />}
       </Context.Provider>
     </div>

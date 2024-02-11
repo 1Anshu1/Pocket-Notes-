@@ -11,10 +11,12 @@ const GroupContainer = () => {
     }
 
     return (
-        <div className='groupContainer'>
-            <Group />
+        <>
+            <div className='groupContainer'>
+                <Group />
+            </div>
             <div className="add" onClick={handleClick}>+</div>
-        </div>
+        </>
     )
 }
 

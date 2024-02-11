@@ -1,12 +1,5 @@
 .notes-banner {
-    background-color: var(--notes-bg);
-    height: 100vh;
-    width: 75%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: none;
 }
 
 .text {
@@ -33,4 +26,18 @@
 .bottom img {
     width: 20px;
     height: 20px;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .notes-banner {
+        background-color: var(--notes-bg);
+        height: 100vh;
+        width: 75%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }

@@ -16,18 +16,29 @@ const Modal = () => {
 
 
     const handleSubmit = () => {
+        group.name = group.name.trim();
         if (group.name === '' || group.color === '') {
             errorRef.current.style.display = 'block'
+            errorRef.current.textContent = 'All Fields are required'
         } else {
             if (localStorage.getItem('Group')) {
                 let all = JSON.parse(localStorage.getItem('Group'))
-                all = [...all, group]
-                localStorage.setItem('Group', [JSON.stringify(all)])
+                const check = all.find((item) => item.name === group.name)
+
+                if (!check) {
+                    all = [...all, group]
+                    localStorage.setItem('Group', [JSON.stringify(all)])
+                    setShow(false)
+                } else {
+                    errorRef.current.style.display = 'block'
+                    errorRef.current.textContent = 'Group name already exists'
+                }
             } else {
                 let all = [group]
                 localStorage.setItem('Group', [JSON.stringify(all)])
+                setShow(false)
             }
-            setShow(false)
+
 
         }
     }
@@ -56,7 +67,7 @@ const Modal = () => {
                         <div id='color6' className='color' onClick={handleColor}></div>
                     </div>
                 </div>
-                <div ref={errorRef} className="error">All Fields are required</div>
+                <div ref={errorRef} className="error"></div>
                 <button onClick={handleSubmit}>Create</button>
             </div>
         </div>

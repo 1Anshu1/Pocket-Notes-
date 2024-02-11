@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import NotesBanner from '../notesBanner/NotesBanner'
 import NotesSection from '../notesSection/NotesSection'
 import { Context } from '../../Context';

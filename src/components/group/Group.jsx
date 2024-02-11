@@ -6,7 +6,7 @@ const Group = () => {
     const [active, setActive] = useState('')
     const allGroup = JSON.parse(localStorage.getItem('Group'))
 
-    const { setCurrentGroup } = useContext(Context)
+    const { setCurrentGroup, setHideNotes } = useContext(Context)
 
     function getLogo(name) {
         const temp = name.split(' ')
@@ -19,6 +19,7 @@ const Group = () => {
 
     const handleClick = (e, group) => {
         setActive(group.name)
+        setHideNotes(false)
         setCurrentGroup(allGroup.find((item) => item.name === group.name))
     }
 
