@@ -1,4 +1,5 @@
-![PocketNotes1-ezgif com-video-to-gif-converter](https://github.com/1Anshu1/Pocket-Notes-/assets/103065132/eeb9d706-a515-43ca-b745-41fcea5a5a40)
+https://github.com/1Anshu1/Pocket-Notes-/assets/103065132/05ad3aad-059c-4f91-99a3-9ab7ad13e98a.mp4
+
 Pocket-Notes is a note-taking application that allows users to organize their thoughts and ideas efficiently. It offers a user-friendly interface with both desktop and mobile responsiveness. Users can create groups, add notes to specific groups, customize group colors, and save notes with ease. The application utilizes local storage to persistently store groups and notes, ensuring data integrity even after page reload or refresh.
 
 Features
